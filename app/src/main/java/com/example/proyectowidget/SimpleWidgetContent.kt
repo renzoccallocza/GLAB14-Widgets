@@ -45,6 +45,11 @@ class SimpleWidgetContent : GlanceAppWidget() {
                     text = "Página Principal",
                     onClick = actionStartActivity<MainActivity>()
                 )
+                Button(
+                    text = "Segunda Pantalla",
+                    onClick = actionStartActivity<SecondActivity>(),
+                    modifier = GlanceModifier.padding(start = 8.dp)
+                )
             }
         }
     }
